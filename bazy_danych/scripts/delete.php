@@ -7,10 +7,10 @@ if($_GET['id']){
   if($connect->affected_rows>0){
     echo "usunięto $connect->affected_rows wierszy";
   }
-  header("location: ../3_bazy_tabela_delete.php?delete=$idik");
+  header("location: ../3_bazy_tabela_insert.php?delete=$idik");
 
 }
 else{
-  header('location: ../3_bazy_tabela_delete.php');
+  header('location: ../3_bazy_tabela_insert.php');
 }
  ?>
